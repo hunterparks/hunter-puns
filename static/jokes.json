@@ -13,5 +13,10 @@
     "id": 3,
     "setup": "I went on a date with a matador, but it didn't work out.",
     "punchline": "There were just too many red flags."
+  },
+  {
+    "id": 4,
+    "setup": "Yesterday, I found out that I am colorblind.",
+    "punchline": "It really came out of the purple."
   }
 ]
