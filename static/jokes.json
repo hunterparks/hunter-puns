@@ -48,5 +48,10 @@
     "id": 10,
     "setup": "Where do stormtroopers do their Christmas shopping?",
     "punchline": "At the store next to Target."
+  },
+  {
+    "id": 11,
+    "setup": "I asked the surgeon if I could administer my own anesthetic.",
+    "punchline": "He said: “Sure, knock yourself out.”"
   }
 ]
