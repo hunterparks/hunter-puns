@@ -23,5 +23,10 @@
     "id": 5,
     "setup": "Singing in the shower is great until you get shampoo in your mouth.",
     "punchline": "Then it's a soap opera!"
+  },
+  {
+    "id": 6,
+    "setup": "You might think that a snail would move faster without a shell...",
+    "punchline": "...but it actually becomes more sluggish!"
   }
 ]
