@@ -28,5 +28,10 @@
     "id": 6,
     "setup": "You might think that a snail would move faster without a shell...",
     "punchline": "...but it actually becomes more sluggish!"
+  },
+  {
+    "id": 7,
+    "setup": "Every morning, I tell my family that I'm going jogging and then I don't go.",
+    "punchline": "It's a running joke."
   }
 ]
