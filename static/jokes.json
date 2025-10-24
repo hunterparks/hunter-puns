@@ -53,5 +53,10 @@
     "id": 11,
     "setup": "I asked the surgeon if I could administer my own anesthetic.",
     "punchline": "He said: “Sure, knock yourself out.”"
+  },
+  {
+    "id": 12,
+    "setup": "I changed all my passwords to “Kenny”.",
+    "punchline": "Now I have all Kenny Loggins. I’m Alright, I just like living in the Danger Zone."
   }
 ]
