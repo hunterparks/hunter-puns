@@ -38,5 +38,10 @@
     "id": 8,
     "setup": "I got mugged by six dwarves this morning.",
     "punchline": "Not Happy."
+  },
+  {
+    "id": 9,
+    "setup": "What do you call a bunch of chess players bragging about their games in a hotel lobby?",
+    "punchline": "Chess nuts boasting in an open foyer…."
   }
 ]
