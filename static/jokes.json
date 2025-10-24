@@ -88,5 +88,10 @@
     "id": 18,
     "setup": "I quit my job at the helium factory.",
     "punchline": "I refuse to be spoken to in that tone."
+  },
+  {
+    "id": 19,
+    "setup": "Scientists tried to cross cheetah and crab genes together.",
+    "punchline": "I am worried because it can go sideways fast."
   }
 ]
