@@ -1,3 +1,7 @@
+const corsHeaders = {
+	'Access-Control-Allow-Origin': '*',
+};
+
 export default {
 	async fetch(request, _env, _ctx): Promise<Response> {
 		const url = new URL(request.url);
@@ -57,11 +61,11 @@ export default {
 			{
 				headers: {
 					'Content-Type': 'text/html',
+					...corsHeaders,
 				},
 			});
 		}
 		if (url.pathname !== '/api/random') {
-			console.log(url.origin);
 			return Response.redirect(`${url.origin}/`, 302);
 		}
 		
@@ -69,12 +73,12 @@ export default {
 		
 		const response = await fetch(JOKES_URL, { cf: { cacheEverything: true, cacheTtl: 300 }});
 		if (!response.ok) {
-			return new Response('Failed to load jokes', { status: 502 });
+			return new Response('Failed to load jokes', { status: 502, headers: corsHeaders });
 		}
 
 		const jokes = await response.json();
 		if (!Array.isArray(jokes) || jokes.length < 1) {
-			return new Response('No jokes available', { status: 500 });
+			return new Response('No jokes available', { status: 500, headers: corsHeaders });
 		}
 
 		const joke = jokes[Math.floor(Math.random() * jokes.length)];
@@ -82,6 +86,7 @@ export default {
 			headers: {
 				'Content-Type': 'application/json; charset=UTF-8',
 				'Cache-Control': 'no-store',
+				...corsHeaders,
 			},
 		});
 	},
