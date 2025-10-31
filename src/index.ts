@@ -2,6 +2,11 @@ const corsHeaders = {
 	'Access-Control-Allow-Origin': '*',
 };
 
+// Format: 'month-day' -> joke id
+const FEATURED_JOKES = new Map<string, number>([
+	['10-31', 67]
+]);
+
 export default {
 	async fetch(request, _env, _ctx): Promise<Response> {
 		const url = new URL(request.url);
@@ -76,12 +81,32 @@ export default {
 			return new Response('Failed to load jokes', { status: 502, headers: corsHeaders });
 		}
 
-		const jokes = await response.json();
+		const jokes = await response.json<Array<{ id: number; setup: string; punchline: string; }>>();
 		if (!Array.isArray(jokes) || jokes.length < 1) {
 			return new Response('No jokes available', { status: 500, headers: corsHeaders });
 		}
 
-		const joke = jokes[Math.floor(Math.random() * jokes.length)];
+		const now = new Date();
+		let formattedDate = `${now.getMonth() + 1}-${now.getDate()}`;
+		if (request.cf?.timezone) {
+			const options = {
+				timeZone: request.cf.timezone,
+			};
+			const formatter = new Intl.DateTimeFormat([], options);
+			const formattedParts = formatter.formatToParts(new Date());
+			const formattedMonth = formattedParts.find((part) => part.type === 'month')?.value;
+			const formattedDay = formattedParts.find((part) => part.type === 'day')?.value;
+			if (formattedMonth && formattedDay) {
+				formattedDate = `${formattedMonth}-${formattedDay}`;
+			}
+		}
+		
+		const featuredJoke = FEATURED_JOKES.get(formattedDate);
+		const joke = featuredJoke ? jokes.find((j) => j.id === featuredJoke) : jokes[Math.floor(Math.random() * jokes.length)];
+		if (!joke) {
+			return new Response('Unable to select joke', { status: 500, headers: corsHeaders });
+		}
+
 		return new Response(JSON.stringify(joke), {
 			headers: {
 				'Content-Type': 'application/json; charset=UTF-8',

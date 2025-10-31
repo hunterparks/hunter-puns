@@ -323,5 +323,20 @@
     "id": 65,
     "setup": "There's a condition called pica, where people eat odd things. There's also a condition where people eat pokemon cards.",
     "punchline": "It's called pika chew."
+  },
+  {
+    "id": 66,
+    "setup": "Did you hear about the Invisible Man going to the hospital?",
+    "punchline": "He was in reception all night waiting to be seen!"
+  },
+  {
+    "id": 67,
+    "setup": "I told my friend: There's only one thing that scares me during Halloween...",
+    "punchline": "Friend: \"Which is?\" Me: \"Exactly\""
+  },
+  {
+    "id": 68,
+    "setup": "Working at the hydrant factory was terrible.",
+    "punchline": "You couldn't park anywhere near the place."
   }
 ]
