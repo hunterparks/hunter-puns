@@ -343,5 +343,10 @@
     "id": 69,
     "setup": "Why don't you see elephants hiding in trees?",
     "punchline": "Because they're so good at it."
+  },
+  {
+    "id": 70,
+    "setup": "I saw a crime committed at the fruit market.",
+    "punchline": "It was bananas."
   }
 ]
