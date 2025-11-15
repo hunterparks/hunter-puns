@@ -363,5 +363,10 @@
     "id": 73,
     "setup": "Why did the sea monster eat three boats transporting potatoes?",
     "punchline": "Because nobody can stop after just one potato ship!"
+  },
+  {
+    "id": 74,
+    "setup": "What do you call an apology written in dots and dashes?",
+    "punchline": "Re-Morse code."
   }
 ]
