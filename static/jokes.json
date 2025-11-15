@@ -348,5 +348,10 @@
     "id": 70,
     "setup": "I saw a crime committed at the fruit market.",
     "punchline": "It was bananas."
+  },
+  {
+    "id": 71,
+    "setup": "If riding motorcycles gives you short term memory loss...",
+    "punchline": "Just imagine what riding motorcycles will do!"
   }
 ]
