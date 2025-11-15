@@ -378,5 +378,10 @@
     "id": 76,
     "setup": "I laid in bed last night to read the dictionary, but I didn't finish it.",
     "punchline": "I got up to P."
+  },
+  {
+    "id": 77,
+    "setup": "What do you call a knight who hates fighting?",
+    "punchline": "Sir Render!"
   }
 ]
