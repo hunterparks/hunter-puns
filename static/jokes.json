@@ -368,5 +368,10 @@
     "id": 74,
     "setup": "What do you call an apology written in dots and dashes?",
     "punchline": "Re-Morse code."
+  },
+  {
+    "id": 75,
+    "setup": "How do you fix a broken pumpkin?",
+    "punchline": "With a pumpkin patch!"
   }
 ]
