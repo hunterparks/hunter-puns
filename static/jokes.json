@@ -383,5 +383,25 @@
     "id": 77,
     "setup": "What do you call a knight who hates fighting?",
     "punchline": "Sir Render!"
+  },
+  {
+    "id": 78,
+    "setup": "You tell the punchline first.",
+    "punchline": "How do you mess up a joke?"
+  },
+  {
+    "id": 79,
+    "setup": "When does a joke become a dad joke?",
+    "punchline": "When the punchline becomes apparent."
+  },
+  {
+    "id": 80,
+    "setup": "The police officer pulled over the driver with an electric car.",
+    "punchline": "When the driver asked why, the police officer explained that the driver was without a current license."
+  },
+  {
+    "id": 81,
+    "setup": "The defense attorney told the prosecutor \"my client couldn't have done it as he was trapped in a penny\".",
+    "punchline": "He is in a cent."
   }
 ]
