@@ -403,5 +403,10 @@
     "id": 81,
     "setup": "The defense attorney told the prosecutor \"my client couldn't have done it as he was trapped in a penny\".",
     "punchline": "He is in a cent."
+  },
+  {
+    "id": 82,
+    "setup": "Why did the US Treasury stop making pennies?",
+    "punchline": "Because the country doesn’t make any cents."
   }
 ]
